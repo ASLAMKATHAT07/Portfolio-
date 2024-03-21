@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Resume</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+			 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+
+
+
+		<style>
+
+
+	/*-------------------------------LOGO---------------------------------------*/
+	.navbar-brand
+	{
+		filter: grayscale(100%);
+	}
+
+	.navbar-brand:hover
+	{
+		filter:brightness(3.0);
+	}
+
+	/*---------------------------------ASALM KATHAT-------------------------------------*/
+		#h1
+		{
+			position: relative;
+			font-size:60px;
+			color: #222;
+			box-sizing: border-box;
+			font-family:forte;
+			/*padding-top:3%;*/
+			padding-left:3%;
+		}
+		#h1::before
+		{
+			content: attr(data-text);
+			position: absolute;
+			color:#fafa;
+			width:10px;
+			overflow: hidden;
+			white-space: nowrap;
+			border-right: 5px solid whitesmoke;
+			animation: animate 7s linear infinite;
+		}
+		#h1:hover
+		{
+			color: white;
+		}
+
+		@keyframes animate
+		{
+
+			o% ,10%,100%
+			{
+				width:0%;
+			}
+			70% ,90%{
+
+				width:48%;
+			}
+		}
+
+	/*-----------------------typewriter text baner-------------------------------*/
+		
+		.typewrite
+		{
+
+			color:#fff; 
+			text-decoration: none;
+			padding-left:;
+		}
+
+		#myname
+		{
+			color:#fafa;
+		}
+		#myname:hover
+			{
+				color:white;
+			}
+		
+	
+	
+		
+		/* -----------------------All font faimly----------------------*/
+					.fontfaimly
+					{
+						font-family:Stencil;
+						text-shadow:10px 10px 5px black;
+						font-size:50px;
+						font-weight:600;
+					
+					}
+		/* ------------------container div 1 strat----------------- */
+					.navbar-nav
+					{
+						font-family:Stencil;
+						text-shadow:10px 15px 5px black;
+					}
+
+					
+		/* ------------------about img ak----------------- */
+			#ak 
+			{
+				box-shadow:15px 15px 5px black;
+				border-radius:5%;
+				
+							
+
+			}
+			#ak:hover
+			{
+				transform: scale(1.1,1.1);
+				animation:;
+			}
+			#p
+			{
+				text-shadow:15px 15px 5px black;
+				font-family:forte;
+			}
+				
+		
+
+
+/* ------------------ Education and hobis card----------------- */
+				.card
+					{
+
+						background:#212428;
+						color:white;
+						height:100%;
+						  box-shadow:5px 5px  5px grey;
+
+					}
+					.card:hover
+						{
+							 background:#E5E6E5;
+							 color:black;
+							 box-shadow:5px 5px 5px black;
+							      
+						}
+						
+/* ------------------CUSTOM SCROLL BAR------------------- */
+				::-webkit-scrollbar
+				{
+					width:10px;
+				}
+				::-webkit-scrollbar-track
+				{
+					background: #000000;
+				}
+				::-webkit-scrollbar-thumb
+				{
+					background: linear-gradient( transparent,#6c757d);
+					border-radius:6px;
+				}
+
+				::-webkit-scrollbar-thumb:hover
+				{
+					background: linear-gradient(transparent,#d63384);
+				}
+			
+		
+		</style>
+	
+</head>
+<body class="bg-dark">
+	
+
+	<div class="container-fluid img-fluid"  style="background-image:url(banner.jpg);background-repeat: no-repeat;background-size: cover;height:100vh;background-size:100% 100%; background-attachment:fixed;">
+		 			<a href="#bottom"></a>
+						<i id="top"></i>
+				
+						<div class="row">
+							<div class=" col-sm-12">
+									  <nav class="navbar navbar-expand-sm navbar-dark">
+										<div class="container-fluid">
+											<a class="navbar-brand" href="#"><img src=".\logo (2).png"style="height:40%;width:40%;"></a>
+											<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+											 <span class="navbar-toggler-icon"></span>
+											</button>
+											
+											<div class="collapse navbar-collapse justify-content-end" id="Navbar">
+												<ul class="navbar-nav fs-3  ">
+													<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+													<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+													<li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+													<li class="nav-item"><a class="nav-link" href="#education">Education </a></li>
+													<li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+												</ul>
+											</div>
+										  </div>
+									  </nav>
+									  
+							 <h1 class="mt-5 typewrite" style="color:#b779b8; padding-left: 3%;">Hyy There</h1>		
+							 
+							 <h1 class="mt-0" id="h1"data-text="ASLAM KATHAT">ASLAM KATHAT<h>
+
+							  <h1>
+  								<a href="" class="typewrite" data-period="2000" 
+  									data-type='[ "This Side..!"]' id="myname">
+								   	 <span class="wrap"></span>
+								  </a>
+							</h1>	
+
+							</div>
+						</div>
+				
+					  
+			</div>	
+		  
+
+<!----------------------About me container div 2 start------------------------->
+	  
+	  	<div class="container-fluid " id="about" style="height:100vh;">
+	  		<h1 class=" text-center text-white fontfaimly"><font class="text-primary">A</font>bout <font class="text-primary">M</font>e</h1>
+			<div class="row">
+				 <div class="col-sm-5 mb-3 mt-5">
+				  	<img id="ak" class="img-fluid mt-2"src=".\n3.jpg" style="height:80%; padding-left: 5%;">
+				  </div>
+					
+					<div class="col-sm-7 mt-5" >
+						<p id="p" class=" h4 mt-5 text-white text-center" style="line-height:50px; letter-spacing:2px;">Hii! I'm Aslam Kathat from beawar, I have joined the course of saleforce from(<a class="text-decoration-none " href="https://www.starinfotechcollege.com/">star infotech College</a>) Ajmer and wish learn how to utilise these alongside my soft skills, so that i can build a career path in the field. I have done my schooling from RBSE Board.</p >
+					</div>
+			</div>
+		</div>
+
+
+<!------------------------- container div 3 strat--Skills-------------------------------------------->
+		
+			<div class="container-fluid "  id="Skills" style="height:100vh;">
+				
+				<h1 class="text-primary text-center pt-2 fontfaimly " >Skills</h1>
+				
+					<p class="text-white text-center " style="font-size:25px;"> Some Skills Information About Me</p>
+				
+					<div class="row">
+						<div class="col-sm-6 mt-3">
+							<h3 class="text-white">HTML</h3>
+							<div class="progress mt-2" style="height:25px;">
+								<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:90%;font-size:20px;"></div>
+							</div>
+						</div>	
+							<div class="col-sm-6    mt-3">	
+								<h3 class="text-white">CSS</h3>
+								<div class="progress mt-2" style="height:25px;">
+									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:85%;font-size:20px;"></div>
+								</div>
+							</div>
+						
+					
+					</div>	
+					<div class="row">
+						<div class="col-sm-6 mt-5">
+							<h3 class="text-white">BOOTSTRAP 5</h3>
+							<div class="progress mt-2" style="height:25px;">
+								<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:90%;font-size:20px;"></div>
+							</div>
+						</div>
+						
+					
+						
+							<div class="col-sm-6 mt-5">	
+								<h3 class="text-white">C LANGUAGE</h3>
+								<div class="progress mt-2" style="height:25px;">
+									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:85%;font-size:20px;"></div>
+								</div>
+							</div>
+						
+						
+					</div>
+
+									
+					
+			</div>
+		
+		
+ <!------------------------ portpholio-------------------------->
+ <div class="container-fluid" style="height:100vh;">
+ 	<h1 class=" text-center pt-2 pb-3 text-primary fontfaimly">Portfolio</h1>
+	 	<div class="container-fluid ">
+			<div class="row mt-4 pb-3">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-header d-flex justify-content-center">
+							<img class="img-fluid" src=".\n1.jpg" style="height:280px;width:250px;" />
+						</div>
+						<div class="card-body">
+							<h2 class="card-title text-center" style=" font-size:25px;">ME</h2>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-header d-flex justify-content-center">
+							<img class="img-fluid" src=".\frnds.jpg" style="height:280px;width:250px;"  />
+						</div>
+						<div class="card-body">
+							<h2 class="card-title text-center"style=" font-size:25px;">College Firend's</h2>
+						</div>
+					</div>
+						
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-header d-flex justify-content-center">
+							<img class="img-fluid" src=".\IMG_20240119_154055.jpg" style="height:280px;width:250px;" />
+						</div>
+						<div class="card-body">
+							<h2 class="card-title text-center"style=" font-size:25px;">ME</h2>
+						</div>
+					</div>
+						
+				</div>
+			</div>	
+		</div>	
+</div>   
+
+
+
+ 
+ 
+ <!------------------------ container div 4 strat-------------------------->
+		 
+		 
+	<div class="container-fluid  " id="education"style="height:100vh;">
+	
+		<h1 class=" text-center pt-3 pb-3 text-primary fontfaimly">Education</h1>
+		<div class="container-fluid ">
+				<div class="row mt-3">
+					<div class="col-sm-4">
+						
+							<div class="card">
+								 <div class="card-header d-flex justify-content-center">
+                                    <img src=".\salesforce.jpg" class="img-fluid" style="width:100%;"/>
+                                </div>
+										
+								 <div class="card-body">
+                                    <h3 class="card-title text-danger">Salesforce</h3>
+                                    <p class="card-text h5 text-center text-fluid">I have completed three language in SALESFORCE so far... I have a lot of Fun Completing all three language. I hope i Will have as much fun completing my Studies in the future too...!</p>
+                                </div>	
+							</div>	
+					</div>	
+					
+					
+					<div class="col-sm-4">
+						<div class="card">
+                                <div class="card-header d-flex justify-content-center">
+                                    <img src=".\12th.jpg" alt="Card image" class="img-fluid" style="width:100%;">
+                                </div>
+                                        
+                                <div class="card-body">
+                                    <h3 class="card-title text-danger">12th</h3>
+                                    <p class="card-text h5 text-center text-fluid">2020-2021 I have 12th Passed RBSE Board School-->Gurudeep Acadmey Sr Sec School<br>Percentage->80%</p>
+                                </div>
+                            </div>
+					</div>
+					
+						<div class="col-sm-4">
+						<div class="card">
+                                <div class="card-header d-flex justify-content-center">
+                                    <img src=".\10th.jpg" alt="Card image" class="img-fluid" style="width:100%;">
+                                </div>
+                                        
+                                <div class="card-body">
+                                <h3 class="card-title text-danger">10th</h3>
+                                    <p class="card-text h5 text-center text-fluid">2020-2021 I have 10th Passed RBSE Board School-->Gurudeep Acadmey Sr Sec School<br>Percentage->53.17%</p>
+                                </div>
+                            </div>	
+					</div>
+				</div>
+			</div>
+</div>
+		
+			
+			
+
+
+<!----------------------------------Hobbies------------------------------------------>	
+	
+<div class="container-fluid  " id="education"style="height:100vh;">
+			<h1 class=" text-center pt-3 pb-3 text-primary fontfaimly">Hobbies</h1>
+		
+			 
+			<div class="container-fluid ">
+				<div class="row mt-3">
+					<div class="col-sm-4">
+						
+							<div class="card">
+								<div class="card-header d-flex justify-content-center">
+									<img class="img-fluid" src=".\music.png" style="height:200px;width:150px;" />
+								</div>
+										
+								<div class="card-body">
+									<h3 class="card-title text-primary text-center">Music</h3>
+								</div>	
+							</div>	
+					</div>	
+					
+					
+					<div class="col-sm-4">
+						
+							<div class="card">
+								<div class="card-header d-flex justify-content-center">
+									<img class="img-fluid" src=".\jonatan-pie-h8nxGssjQXs-unsplash.jpg" alt=".." style="height:200px;width:250px;"/>
+								</div>										
+								<div class="card-body">
+									<h3 class="card-title text-primary text-center">Travel</h3>
+								</div>
+								
+							</div>
+					</div>
+					
+						<div class="col-sm-4">
+						
+							<div class="card">
+								<div class="card-header d-flex justify-content-center">
+									<img class="img-fluid" src=".\food-removebg-preview.png" 
+									 style="height:200px;width:150px;"/>
+								</div>
+										
+								<div class="card-body">
+									<h3 class="card-title text-primary text-center">Foodie</h3>
+								</div>	
+							</div>	
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<!-----------------------container div 4 end-------------------------------------->
+		 
+		 
+	<!----------------------------container div 5 start------------------------------>
+       <div class="container-fluid" id="Contact"style="height: 100vh;">
+           
+                <h1 class="text-primary pt-3  text-center fontfaimly">CONTACT ME</h1>
+            
+                <div class="row" style="padding-top:30px;">
+                    <div class="row justify-content-center col-lg-6">
+                      <div class="col-sm-12">
+						<h3 class="text-white mt-2"><i class="fa-solid fa-location-dot fa-beat-fade fa-lg" style="color:white;"></i>Address</h3> 
+						<h6 class="text-white">Ganesh nagar,Mediya,Beawar Pin-305901</h6>
+                      </div>
+                      <div class="col-sm-12">
+						
+                        <h3 class="text-white mt-2"><i class="fa-solid fa-phone fa-beat-fade fa-lg" style="color:white;"></i>Phone Number</h3>
+                        <h6 class="text-white">+91 9414546432</h6>
+                      </div>
+                      <div class="col-sm-12">
+					  
+                        <h3 class="text-white mt-2"><i class="fa-solid fa-envelope fa-beat-fade fa-lg" style="color:white;"></i>Email Id </h3>
+                        <h5 class="text-white ">aslamkathat5464@gmail.com</h5>
+                      </div>
+                    </div>
+        
+                    <div class="row justify-content-center col-lg-6" style="padding-top: 10px;">
+                        <div class="col-sm-12 ">
+                            <div class="contact-form text-center">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="form-row">
+                                        <div class="control-group col-sm-6">
+                                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                                required="required" data-validation-required-message="Please enter your name" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group col-sm-6">
+                                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                                required="required" data-validation-required-message="Please enter your email" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                            required="required"
+                                            data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-primary mb-3" type="submit" id="sendMessageButton">Send
+                                            Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+				
+				
+        </div>
+    
+		 
+	
+		
+<!----------------------------- container div 6 strat----------------------->
+		   
+
+		   <div id="div5" class="container-fluid   bg-primary text-white  py-1 px-sm-1 px-md-5  ">
+				<div class="container text-center py-4">
+					<div class="d-flex justify-content-center mb-4">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-4 ">
+								<a class="btn btn-light btn-social mr-2 m-2" href="#"><i class="fa-brands fa-twitter fa-fade fa-xl"style="color:blue;" ></i></a>
+							</div>
+								<div class="col-lg-3 col-md-3 col-sm-4">
+									<a class="btn btn-light btn-social mr-2 m-2" href="#"><i class="fa-brands fa-facebook fa-fade fa-xl" style="color:blue;"></i></a>
+								</div>
+							<div class="col-lg-3 col-md-3 col-sm-4">
+								<a class="btn btn-light btn-social mr-2 m-2" href="https://instagram.com/aslam_kathat07?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram fa-xl fa-fade"style="color:red;"></i></a>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-12">
+								<button style="height:40px; width:130px;"  class="btn btn-dark btn-md text-decoration-none mt-2" type="button"><a href=".\ASLAM RESUME 3.pdf">Download CV</a></button>
+							</div>	
+					</div>
+				</div>
+            
+					<p>&copy; <a class="text-white font-weight-bold" href="#">Copy Right</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Aslam Kathat</a>
+						</p>
+				</div>
+				
+<!-------------------------------------- bookmark--------------------------------->
+				<h6 id="bottom"></h6>
+				<a class="ps-5" href="#top" style="color: white;">
+						<i class="fa-solid fa-up-long fa-beat fa-xl float-end"></i>
+				</a>
+			</div>
+	
+<!-------------------------------------- container div 6 end--------------------------->	
+	
+
+	
+
+	
+	
+				
+</body>	
+</html>
+
+<script type="text/javascript">
+	var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 200;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+    
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
